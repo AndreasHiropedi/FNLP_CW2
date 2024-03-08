@@ -8,6 +8,7 @@ import math
 import itertools
 import numpy as np
 
+
 # module for computing a Conditional Frequency Distribution
 from nltk.probability import ConditionalFreqDist
 
@@ -131,7 +132,6 @@ class HMM:
         self.transition_PD = ConditionalProbDist(transition_FD, estimator)
 
         return self.transition_PD
-
     # Q1.2
     # Access function for testing the transition model
     # For example model.tlprob('VERB','VERB') might be -2.4
@@ -295,7 +295,6 @@ def hard_em(
 
     return model
 
-
 def compute_acc(hmm, test_data, print_mistakes):
     """
     Computes accuracy (0.0 - 1.0) of model on some data.
@@ -332,6 +331,7 @@ def compute_acc(hmm, test_data, print_mistakes):
             to_print -= 1
 
     return float(correct / (correct + incorrect))
+
 
 # Useful for testing
 def isclose(a, b, rel_tol=1e-09, abs_tol=0.0):
