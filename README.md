@@ -2,4 +2,4 @@
 
 Second coursework of the Foundations of Natural Language Processing course.
 
-Mark: /100
+Mark: 80.5/100
